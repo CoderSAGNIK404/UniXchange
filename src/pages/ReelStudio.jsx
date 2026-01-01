@@ -171,7 +171,7 @@ const UploadView = ({ onUploadComplete, addReel, user }) => {
         }
 
         try {
-            const res = await fetch('http://localhost:5000/api/reels', {
+            const res = await fetch('/api/reels', {
                 method: 'POST',
                 body: formData // No Content-Type header needed, browser sets it for FormData
             });
