@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: unixchange-web
+    env: node
+    buildCommand: npm run render-build
+    startCommand: cd server && npm start
